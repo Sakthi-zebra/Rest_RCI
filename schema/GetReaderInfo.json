@@ -1,0 +1,55 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Report",
+    "RdrSN",
+    "RdrModel",
+    "Version"
+  ],
+  "properties": {
+    "Report": {
+      "$id": "#/properties/Report",
+      "type": "string",
+      "title": "The Report Schema",
+      "default": "",
+      "examples": [
+        "GetInfo"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "RdrSN": {
+      "$id": "#/properties/RdrSN",
+      "type": "string",
+      "title": "The Rdrsn Schema",
+      "default": "",
+      "examples": [
+        "84:24:8D:FB:6C:10"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "RdrModel": {
+      "$id": "#/properties/RdrModel",
+      "type": "string",
+      "title": "The Rdrmodel Schema",
+      "default": "",
+      "examples": [
+        "96004"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Version": {
+      "$id": "#/properties/Version",
+      "type": "string",
+      "title": "The Version Schema",
+      "default": "",
+      "examples": [
+        "3.6.10.0"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

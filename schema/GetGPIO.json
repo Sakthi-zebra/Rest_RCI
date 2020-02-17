@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Cmd",
+    "GPIOs"
+  ],
+  "properties": {
+    "Cmd": {
+      "$id": "#/properties/Cmd",
+      "type": "string",
+      "title": "The Cmd Schema",
+      "default": "",
+      "examples": [
+        "SetGPIOs"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "GPIOs": {
+      "$id": "#/properties/GPIOs",
+      "type": "array",
+      "title": "The Gpios Schema",
+      "items": {
+        "$id": "#/properties/GPIOs/items",
+        "type": "integer",
+        "title": "The Items Schema",
+        "default": 0,
+        "examples": [
+          2,
+          true
+        ]
+      }
+    }
+  }
+}
